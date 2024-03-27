@@ -2,6 +2,8 @@
 
 import inquirer from "inquirer";
 
+console.log("WELCOME TO SIMPLE CALCULATOR\n")
+
 const userAnswer = await inquirer.prompt([
   { message: "Enter First Number", type: "number", name: "pehlaNumber" },
   { message: "Enter Second Number", type: "number", name: "doosraNumber" },

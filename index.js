@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
+console.log("WELCOME TO SIMPLE CALCULATOR\n");
 const userAnswer = await inquirer.prompt([
     { message: "Enter First Number", type: "number", name: "pehlaNumber" },
     { message: "Enter Second Number", type: "number", name: "doosraNumber" },
@@ -15,7 +16,7 @@ let printSubstraction = userAnswer.pehlaNumber - userAnswer.doosraNumber;
 let printMultiplication = userAnswer.pehlaNumber * userAnswer.doosraNumber;
 let printDivision = userAnswer.pehlaNumber / userAnswer.doosraNumber;
 if (userAnswer.operator === "Addition") {
-    console.log(`The Addition Of Given Numbers are: ${printAddition}`); 
+    console.log(`The Addition Of Given Numbers are: ${printAddition}`);
 }
 else if (userAnswer.operator === "Substraction") {
     console.log(`The Substraction Of Given Numbers are: ${printSubstraction}`);
